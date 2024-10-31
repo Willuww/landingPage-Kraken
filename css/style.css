@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/El-Barber-Pole-contemporaneo.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/El-Barber-Pole-contemporaneo.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Ajusta el nivel de difuminado según tu preferencia */
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+   /* background-color: rgba(0, 0, 0, 0.7);*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.instagram-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #f09433, #eb6b3c, #dc2743, #c91b78, #6623d1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.instagram-button:hover {
+    background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.slogan {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #fffbfb;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.phone-image {
+    width: 100%;
+    max-width: 600px;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .shop-name,
+    .instagram-button {
+        position: static;
+        margin: 10px 0;
+    }
+}
+.shop-name {
+    font-size: 2.5rem; /* Ajusta el tamaño según tu preferencia */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
