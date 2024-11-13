@@ -35,7 +35,7 @@ body {
 
 .header .title {
     font-size: 2em;
-    color: #f5a623;
+    color: #f6f5f3;
     font-weight: bold;
 }
 
@@ -219,4 +219,24 @@ button:hover {
         width: 90%;
         padding: 15px;
     }
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
 }
